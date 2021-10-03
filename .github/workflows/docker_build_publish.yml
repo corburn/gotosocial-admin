@@ -59,7 +59,9 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       -
-        run: echo ${{ join(steps.meta.outputs.*, '\n')}}
+        run: |
+          echo "tags: ${{ join(steps.meta.outputs.tags, ',')}}"
+          echo "images: ${{ join(steps.meta.outputs.images, ',')}}"
       -
         name: Build and push
         uses: docker/build-push-action@v2
