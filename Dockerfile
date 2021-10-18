@@ -1,5 +1,5 @@
 # bundle the admin webapp
-FROM node:16.10.0-alpine3.14 AS admin_builder
+FROM node:16.11.1-alpine3.14 AS admin_builder
 
 LABEL org.opencontainers.image.source=https://github.com/superseriousbusiness/gotosocial-admin
 
