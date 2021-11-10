@@ -14,7 +14,7 @@
     "bluebird": "^3.7.2",
     "browserify": "^17.0.0",
     "css-extract": "^2.0.0",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react": "^7.27.0",
     "icssify": "^1.2.1",
     "js-file-download": "^0.4.12",
     "postcss": "^8.3.5",
