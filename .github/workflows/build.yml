@@ -1,8 +1,9 @@
 on:
   push:
+    branches: [ main ]
   pull_request:
-    branches:
-    - main
+    # The branches below much be a subset of the branches above.
+    branches: [ main ]
 
 jobs:
   build:
@@ -23,7 +24,7 @@ jobs:
     # When a commit is tagged, create a release with an archive of pre-compiled assets that may be downloaded by tag or latest release.
     # https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases
     #
-    # Example links:
+    # Example asset download links:
     # https://github.com/superseriousbusiness/gotosocial-admin/releases/download/<tag>/gts_admin.tar.gz
     # https://github.com/superseriousbusiness/gotosocial-admin/releases/latest/download/gts_admin.tar.gz
     - name: archive assets for release
